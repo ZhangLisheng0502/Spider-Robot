@@ -16,35 +16,35 @@ Torque is the rotational effect produced by a force acting about a pivot or rota
 
 The magnitude of torque is given by:
 
-\[
-\tau=Fr_{\perp}
-\]
+$$
+\tau = Fr_{\perp}
+$$
 
 where:
 
-- \(\tau\) = torque (N·m)
-- \(F\) = applied force (N)
-- \(r_{\perp}\) = perpendicular distance from the rotational axis to the force's line of action (m)
+- $\tau$ = torque (N·m)
+- $F$ = applied force (N)
+- $r_{\perp}$ = perpendicular distance from the rotational axis to the force's line of action (m)
 
-For a force applied at a position \(r\) with an angle \(\theta\) between the position vector and the force vector:
+For a force applied at a position $r$ with an angle $\theta$ between the position vector and the force vector:
 
-\[
-\tau=rF\sin\theta
-\]
+$$
+\tau = rF\sin\theta
+$$
 
 This shows that torque depends on both the magnitude of the force and its effective lever arm.
 
 For a component subjected to gravity:
 
-\[
-F=mg
-\]
+$$
+F = mg
+$$
 
 Therefore, its gravitational torque about a joint can be expressed as:
 
-\[
-\tau=mgr_{\perp}
-\]
+$$
+\tau = mgr_{\perp}
+$$
 
 This relationship indicates that increasing either the component mass or its distance from the joint increases the gravitational torque required to support it.
 
@@ -54,18 +54,18 @@ This relationship indicates that increasing either the component mass or its dis
 
 The gravitational torque acting on a robotic leg changes as the leg rotates.
 
-For a simplified single-link model with the leg angle \(\alpha\) measured from the horizontal:
+For a simplified single-link model with the leg angle $\alpha$ measured from the horizontal:
 
-\[
-\tau=mgr\cos\alpha
-\]
+$$
+\tau = mgr\cos\alpha
+$$
 
 where:
 
-- \(m\) = mass of the leg
-- \(g\) = gravitational acceleration
-- \(r\) = distance from the joint to the centre of mass
-- \(\alpha\) = angle of the leg measured from the horizontal
+- $m$ = mass of the leg
+- $g$ = gravitational acceleration
+- $r$ = distance from the joint to the centre of mass
+- $\alpha$ = angle of the leg measured from the horizontal
 
 Under this simplified model:
 
@@ -87,46 +87,46 @@ For a uniform rod, the centre of mass is located at its midpoint.
 
 For example, consider a uniform femur segment with:
 
-- Length: \(100\text{ mm}\)
-- Mass: \(20\text{ g}\)
+- Length: $100\text{ mm}$
+- Mass: $20\text{ g}$
 
 Its centre of mass is located at:
 
-\[
-r_{\text{CoM}}=\frac{L}{2}=50\text{ mm}
-\]
+$$
+r_{\text{CoM}} = \frac{L}{2} = 50\text{ mm}
+$$
 
 When the leg is horizontal, its gravitational torque about the proximal joint is:
 
-\[
-\tau=mg r_{\text{CoM}}
-\]
+$$
+\tau = mg r_{\text{CoM}}
+$$
 
 Converting the quantities into SI units:
 
-\[
-m=0.020\text{ kg}
-\]
+$$
+m = 0.020\text{ kg}
+$$
 
-\[
-r_{\text{CoM}}=0.050\text{ m}
-\]
+$$
+r_{\text{CoM}} = 0.050\text{ m}
+$$
 
-\[
-\tau=0.020\times9.81\times0.050
-\]
+$$
+\tau = 0.020\times9.81\times0.050
+$$
 
-\[
-\boxed{\tau=0.00981\text{ N·m}}
-\]
+$$
+\boxed{\tau = 0.00981\text{ N}\cdot\text{m}}
+$$
 
 This example illustrates how the mass distribution of a leg segment directly affects the torque required at its joint.
 
 For a leg containing multiple components, the total gravitational torque can be estimated by considering the individual masses and their respective distances from the joint:
 
-\[
-\tau_{\text{total}}=\sum_i m_i g r_i
-\]
+$$
+\tau_{\text{total}} = \sum_i m_i g r_i
+$$
 
 This simplified expression assumes the relevant gravitational moments act in the same direction and the components are considered in the corresponding maximum-torque orientation. For an actual robot, the individual perpendicular lever arms and orientations must be considered.
 
@@ -140,37 +140,37 @@ A component located farther from a joint produces a larger moment because it has
 
 For the same mass:
 
-\[
-\tau=mgr
-\]
+$$
+\tau = mgr
+$$
 
 Therefore:
 
-\[
-\tau\propto r
-\]
+$$
+\tau \propto r
+$$
 
-Consider a hypothetical 20 g component:
+Consider a hypothetical $20\text{ g}$ component.
 
 ### Case A — Component located 20 mm from the joint
 
-\[
-\tau=0.020\times9.81\times0.020
-\]
+$$
+\tau = 0.020\times9.81\times0.020
+$$
 
-\[
-\tau=0.003924\text{ N·m}
-\]
+$$
+\tau = 0.003924\text{ N}\cdot\text{m}
+$$
 
 ### Case B — Component located 100 mm from the joint
 
-\[
-\tau=0.020\times9.81\times0.100
-\]
+$$
+\tau = 0.020\times9.81\times0.100
+$$
 
-\[
-\tau=0.01962\text{ N·m}
-\]
+$$
+\tau = 0.01962\text{ N}\cdot\text{m}
+$$
 
 The second configuration produces five times the gravitational torque of the first.
 
@@ -202,31 +202,31 @@ For example, placing a servo farther away from a proximal joint increases the le
 
 The gravitational torque contributed by the servo can be estimated as:
 
-\[
-\tau_{\text{servo mass}}=m_{\text{servo}}gr
-\]
+$$
+\tau_{\text{servo mass}} = m_{\text{servo}}gr
+$$
 
-Consider a hypothetical servo with a mass of 13.4 g.
+Consider a hypothetical servo with a mass of $13.4\text{ g}$.
 
 ### Servo located 30 mm from the proximal joint
 
-\[
-\tau=0.0134\times9.81\times0.030
-\]
+$$
+\tau = 0.0134\times9.81\times0.030
+$$
 
-\[
-\tau\approx0.00394\text{ N·m}
-\]
+$$
+\tau \approx 0.00394\text{ N}\cdot\text{m}
+$$
 
 ### Servo located 100 mm from the proximal joint
 
-\[
-\tau=0.0134\times9.81\times0.100
-\]
+$$
+\tau = 0.0134\times9.81\times0.100
+$$
 
-\[
-\tau\approx0.01315\text{ N·m}
-\]
+$$
+\tau \approx 0.01315\text{ N}\cdot\text{m}
+$$
 
 The servo positioned 100 mm from the joint contributes approximately 3.33 times the gravitational torque compared with the servo located 30 mm away.
 
@@ -252,15 +252,15 @@ Reducing the mass of a leg segment decreases the gravitational force acting on t
 
 Since:
 
-\[
-\tau=mgr
-\]
+$$
+\tau = mgr
+$$
 
 for a fixed configuration and lever arm:
 
-\[
-\tau\propto m
-\]
+$$
+\tau \propto m
+$$
 
 Reducing component mass therefore reduces the gravitational torque required to support the component.
 
