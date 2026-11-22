@@ -48,15 +48,7 @@ The following components are not yet included:
 
 Therefore, 210 g is not the total weight of the complete robot.
 
-## 5. Next Steps
-
-- Obtain the weight of individual servo motors.
-- Estimate the weight of servo mounting structures and fasteners.
-- Calculate the estimated total robot weight.
-- Investigate the weight distribution of individual leg segments.
-- Use the weight data for subsequent servo torque analysis.
-
-## 3. Actuator and Electronic Component Weight
+## 5. Actuator and Electronic Component Weight
 
 | Component | Quantity | Individual Weight (g) | Total Weight (g) |
 |---|---:|---:|---:|
@@ -67,10 +59,18 @@ Therefore, 210 g is not the total weight of the complete robot.
 | Buck Converter | 1 | TBD | TBD |
 | Switch | 1 | TBD | TBD |
 
-## 4. Estimated Total Robot Weight
+## 6. Estimated Total Robot Weight
 
 | Category | Weight (g) |
 |---|---:|
 | Mechanical Structure | 210 |
 | Actuators and Electronics | TBD |
 | Estimated Total Weight | TBD |
+
+## 7. Next Steps
+
+- Obtain the weight of individual servo motors.
+- Estimate the weight of servo mounting structures and fasteners.
+- Calculate the estimated total robot weight.
+- Investigate the weight distribution of individual leg segments.
+- Use the weight data for subsequent servo torque analysis.
