@@ -55,3 +55,22 @@ Therefore, 210 g is not the total weight of the complete robot.
 - Calculate the estimated total robot weight.
 - Investigate the weight distribution of individual leg segments.
 - Use the weight data for subsequent servo torque analysis.
+
+## 3. Actuator and Electronic Component Weight
+
+| Component | Quantity | Individual Weight (g) | Total Weight (g) |
+|---|---:|---:|---:|
+| MG90S Servo | 18 | TBD | TBD |
+| Raspberry Pi Pico | 1 | TBD | TBD |
+| PCA9685 Servo Driver | 2 | TBD | TBD |
+| Battery | 1 | TBD | TBD |
+| Buck Converter | 1 | TBD | TBD |
+| Switch | 1 | TBD | TBD |
+
+## 4. Estimated Total Robot Weight
+
+| Category | Weight (g) |
+|---|---:|
+| Mechanical Structure | 210 |
+| Actuators and Electronics | TBD |
+| Estimated Total Weight | TBD |
